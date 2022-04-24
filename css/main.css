@@ -1,0 +1,188 @@
+root{
+    --bg: #f9f4ef;
+    --headline: #020826;
+    --darkkahki: #716040;
+    --kahki: #8c7851; /* main kahki color */
+    --main: #fffffe;
+    --card-bg: #eaddcf;
+    --tertiary: #f25042;
+    --accenntcolor: #f9bc60;
+}
+*{
+    margin:0;
+    padding: 0;
+}
+
+html{
+    font-family: "Tsukushi A Round Gothic","Blanco", system-ui,"-apple-system","BlinkMacSystemFont","Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji", "Segoe UI Emoji","Segoe UI Symbol";
+    color: var(--headline);
+    background-color: var(--bg);
+}
+
+a{
+    color: var(--headline);
+}
+
+
+
+.container{
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+}
+
+/** Navbar */
+.navbar{
+    color: var(--headline);
+    background-color: var(--bg);
+    display: flex; 
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+
+ul .nav-list{
+    list-style-type: none;
+}
+
+.nav-list .list-item{
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+/* alternative 
+.nav-list li{
+    display: inline;
+    float: left;
+    padding: 20px 10px;
+}
+*/
+  
+.navbar a {
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar a:hover,
+a:focus{
+    color: #f25042;
+    font-weight: bold;
+}
+
+.logo img{
+    height: 24px;
+    padding: 10px;
+}
+
+#social-icon{
+    font-size:20px;
+}
+.menu-btn{
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: none;
+    font-family: "Tsukushi A Round Gothic";
+    font-weight: bold;
+}
+
+.menu{
+    display: none;
+}
+
+/* -- main -- */
+main{
+    align-items: center;
+}
+
+.container h1{
+    font-family: "Tsukushi A Round Gothic";
+    font-weight: bold;
+    font-size: 6vw !important; 
+}
+
+#main-title{
+    display: flex;
+    align-items: center;
+}
+
+#main-title #oni-nood-logo img{
+    width: 20vw;
+    margin-left: 8px;
+}
+
+#sub-title{
+    font-size: 1.5rem;
+}
+
+.contact-btn{
+    margin-top: 2rem;
+    line-height: 2rem;
+    text-align: center;   
+    align-items: center;
+    padding: 0 8px;
+    cursor: pointer;
+}
+
+.contact-btn #mail-icon{
+    font-size: 1.4em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.copy-light{
+    font-size: .7em;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+/* Responsive sizing */
+@media all and (max-width:480px){
+    .navbar{
+        position: relative;
+        flex-direction: column; 
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu{
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+
+    .nav-list{    
+        background-color: #8c7851;
+        list-style-type: none;
+        width: 100%;
+        text-align: left;
+        padding-top: 10px; 
+        font-weight: bold;
+        display: none;
+    }
+
+    .nav-list .list-item{
+        display: block;
+        padding: 4px 10px ;
+    }
+    
+    .navbar .logo{
+        width: 100%;
+    }
+
+    .logo img{
+        height: 16px;
+        margin-left: 10px;
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .active{
+        display: block;
+    }
+}
