@@ -80,12 +80,14 @@ a:focus{
 }
 
 .menu-btn{
-    border-radius: 20px;
-    padding: 5px 10px;
+    border-radius: 18px;
+    line-height: 28px;
+    font-size: 1rem;
+    padding: 5px 15px;
     border: none;
     font-family: "Tsukushi A Round Gothic";
     font-weight: bold;
-    box-shadow: inset;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .menu{

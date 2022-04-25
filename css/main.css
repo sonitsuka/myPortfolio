@@ -102,7 +102,7 @@ main{
 .container h1{
     font-family: "Tsukushi A Round Gothic";
     font-weight: bold;
-    font-size: 6vw !important; 
+    font-size: 6.2vw !important; 
 }
 
 #main-title{
@@ -116,7 +116,7 @@ main{
 }
 
 #sub-title{
-    font-size: 1.5rem;
+    font-size: 2vw;
 }
 
 .contact-btn{
@@ -184,5 +184,15 @@ main{
 
     .active{
         display: block;
+    }
+
+    #sub-title{
+        font-size: .9rem;
+    }
+}
+
+@media (min-width:481px) and (max-width:750px){
+    #sub-title{
+        font-size: 1rem;
     }
 }
