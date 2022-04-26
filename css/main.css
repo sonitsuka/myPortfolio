@@ -13,11 +13,21 @@ root{
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    background-color: #020826;
+}
 
 body{
     font-family: "Tsukushi A Round Gothic","Blanco", system-ui,"-apple-system","BlinkMacSystemFont","Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji", "Segoe UI Emoji","Segoe UI Symbol";
     color: var(--headline);
-    background-color: var(--bg);
+    background-color: #fffffe;
+    width: 97vw;
+    height: 97vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    border-radius: 10px;
+    align-items: center;
 }
 
 a{
@@ -37,17 +47,14 @@ main{
     margin-top: 2rem;
 }
 
-/** Navbar */
+/** Header Navbar */
 .navbar{
     color: var(--headline);
     background-color: var(--bg);
     display: flex; 
-    height: 50px;
     align-items: center;
     justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 10px;
+    padding: 10px 20px;
 }
 
 ul .nav-list{
