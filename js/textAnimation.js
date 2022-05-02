@@ -1,19 +1,14 @@
 gsap.registerPlugin(TextPlugin);
 
-
-let cursor = gsap.to('.cursor', {opacity: 0, ease: "power2.inOut", repeat: -1})
-
-
-let botTl = gsap.timeline()
-botTl.to('.box', {duaration:1, width: "6.2vw", delay:0.5, ease:"power4.inOut"}).
-from('.hi', {duaration:1, y:"7vw", ease:"none"})
-.to('.box', {duaration: 1, height: "7vw", ease: "none"})
+let boxTl = gsap.timeline({repeat:0}).pause()
+boxTl.to('.box', {duaration:10, width: "20vw", delay:2, ease:"power4.inOut"}).
+from('.hi', {duaration:10, y:"7vw", ease:"power3.out"})
+.to('.box', {duaration: 10, height: "7vw", ease: "elastic.out"})
 
 
-
-const tl = gsap.timeline({repeat:0});
-tl.to('.text1', {duration: 0.3, text:"Hi, I'm Oni"})
-    .to(".text2", {duration: 1, text:"Front-end Developer"})
+let tl = gsap.timeline({repeat:0})
+tl.to('.text1', {duration: 0.2, onComplete: () => boxTl.play(), text:"Hi, I'm"})
+tl.to(".text2", {duration: 1.1, text:"Front-end Developer"})
 
 /*
 let masterTl= gsap.timeline()
@@ -30,7 +25,10 @@ word2.forEach(word => {
 })
 */
 
+let cursor = gsap.to('.cursor', {opacity: 0, ease: "power2.inOut", repeat: -1})
+
 const tlAbout = gsap.timeline();
 tlAbout.to('.contact-msg', 
 {duration: 1.4, yoyo: true, repeat:2,
+repeatDelay:1,
 text:"Say hello to me? I'd love to hear from you"})

@@ -140,14 +140,16 @@ main{
     align-items: center;
 }
 
-.container h1{
+.text1,
+.text2,
+h1{
     font-family: "Tsukushi A Round Gothic";
     font-weight: bold;
     font-size: 6.2vw !important; 
 }
 
-#oni-nood-logo img{
-    width: 10px;
+#main-title img{
+    width: 24vw;
     margin-left: 8px;
 }
 
