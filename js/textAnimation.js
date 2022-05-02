@@ -1,7 +1,7 @@
 gsap.registerPlugin(TextPlugin);
 
 
-//let cursor = gsap.to('.cursor', {opacity: 0, ease: "power2.inOut", repeat: -1})
+let cursor = gsap.to('.cursor', {opacity: 0, ease: "power2.inOut", repeat: -1})
 
 
 let botTl = gsap.timeline()
@@ -12,10 +12,8 @@ from('.hi', {duaration:1, y:"7vw", ease:"none"})
 
 
 const tl = gsap.timeline({repeat:0});
-tl.to('.text1', {duration: 0.5, text:"Hi, I'm"})
-    .to(".text2", {duration: 1.2, text:"Front-end Developer"})
-    .to('.contact-text', {x:10})
-    .set('.contact-text',  {text:"Get in touch"})
+tl.to('.text1', {duration: 0.3, text:"Hi, I'm Oni"})
+    .to(".text2", {duration: 1, text:"Front-end Developer"})
 
 /*
 let masterTl= gsap.timeline()
