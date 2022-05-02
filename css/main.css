@@ -18,6 +18,7 @@ root{
     padding: 0;
     box-sizing: border-box;
 }
+
 html{
     background-color: #020826;
 }
@@ -145,10 +146,6 @@ main{
     font-size: 6.2vw !important; 
 }
 
-#main-title{
-    display: flex;
-}
-
 #oni-nood-logo img{
     width: 10px;
     margin-left: 8px;
@@ -176,11 +173,11 @@ ul.contact-btn{
 
 
 .contact-btn .iconify{
-    font-size: 26px;
-    margin-right: 14px;
+    font-size: 28px;
+    margin-right: 15px;
     display: inline-block;
     vertical-align: middle;
-    color: #8c7851;
+    color: #716040;
 }
 
 
@@ -188,7 +185,7 @@ ul.contact-btn{
 .copy-light{
     font-size: .7em;
     text-align: center;
-    margin-top: 1rem;
+    margin: 1rem 0;
 }
 
 /* Responsive sizing */

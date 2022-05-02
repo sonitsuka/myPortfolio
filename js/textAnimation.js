@@ -30,3 +30,7 @@ word2.forEach(word => {
 })
 */
 
+const tlAbout = gsap.timeline();
+tlAbout.to('.contact-msg', 
+{duration: 1.4, yoyo: true, repeat:2,
+text:"Say hello to me? I'd love to hear from you"})
