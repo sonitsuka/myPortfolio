@@ -10,6 +10,7 @@ root{
     --yellow:#ffd200;
     --yamabuki: #f8b500;
 
+
 }
 
 *{
@@ -36,7 +37,6 @@ body{
 
 a{
     color: var(--headline);
-    pointer-events: none;
 }
 
 main{
@@ -62,7 +62,7 @@ main{
     padding: 10px 20px;
 }
 
-ul .nav-list{
+ul.nav-list{
     list-style-type: none;
 }
 
@@ -82,14 +82,12 @@ ul .nav-list{
 .navbar a {
     text-align: center;
     text-decoration: none;
-    pointer-events: none;
 }
 
-.navbar a:hover,
-a:focus{
-    color: #f25042;
-    font-weight: bold;
-    pointer-events: none;
+.list-item a:hover,
+a:focus {
+    border-bottom: 5px double #716040;
+    transition: filter 0.4s ease-in-out 0s, color 0.4s ease-in-out 0.1s;
 }
 
 .logo img{
@@ -97,9 +95,6 @@ a:focus{
     padding: 3px 10px;
 }
 
-#social-icon{
-    font-size:20px;
-}
 .menu-btn{
     border-radius: 20px;
     padding: 5px 10px;
@@ -112,6 +107,7 @@ a:focus{
     display: none;
 }
 
+/* Mouse Couser, 
 .cursor{
     position: fixed;
     width: 20px;
@@ -130,8 +126,7 @@ a:hover.contact-btn ~ .cursor{
     transform: scale(3);
 }
 
-
-/* Animation 
+// Animation 
 .box{
     position: relative;
     bottom: 0;
@@ -152,11 +147,10 @@ main{
 
 #main-title{
     display: flex;
-    align-items: center;
 }
 
-#main-title #oni-nood-logo img{
-    width: 20vw;
+#oni-nood-logo img{
+    width: 50px;
     margin-left: 8px;
 }
 
@@ -164,25 +158,32 @@ main{
     font-size: 1.8vw;
 }
 
-.contact-btn{
+ul.contact-btn{
+    list-style-type: none;
+    font-family: inherit;
+    font-size: 1rem;
     margin-top: 2rem;
-    line-height: 2.5rem;
-    text-align: center;   
+    line-height: 2.5rem;   
     align-items: center;
-    padding: 0 15px;
-    background-color: #ffd200;
     border-radius: 5px;
-    border:0;
+    
+}
+
+.social-icon{
+    display: inline;
+    float: left;
 }
 
 
-
-
-.contact-btn #mail-icon{
-    font-size: 1.4em;
+.contact-btn .iconify{
+    font-size: 28px;
+    margin-left: 15px;
     display: inline-block;
     vertical-align: middle;
+    color: #8c7851;
 }
+
+
 
 .copy-light{
     font-size: .7em;

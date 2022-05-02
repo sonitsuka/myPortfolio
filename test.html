@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<style>
+html,body,iframe{height:100%;width:100%;border:0;padding:0;margin:0;}
+html,body{overflow:hidden;}
+</style>
+<iframe></iframe>
+<script>
+var timer = 5;
+var sites = [
+    './index.html',
+    './work1.html'
+];
+var frame = document.getElementsByTagName("IFRAME")[0];
+var index = 0;
+var cycle = function() {
+    frame.src = sites[index];
+    if(++index>=sites.length) {
+        index = 0;
+    }
+    setTimeout(cycle,timer*1000);
+}
+cycle();
+</script>
+</html>
