@@ -13,12 +13,27 @@ body{
     color: var(--headline);
 }
 
+.social-icon a:hover {
+    color: #716040;
+    transition: 0.3s;
+}
+
 .row{
     display: flex;
 }
 
 .section {
-    padding: 50px;
+    padding: 50px 50px 0 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-title {
+    flex-shrink: 0;
+    width: 160px;
+    text-align: left;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
 }
 
 #navbar-about{
@@ -29,22 +44,24 @@ body{
     margin-top: 0;
 }
 
-.description{
+.about-description{
     font-size: 1.2rem;
     max-width: 800px;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
 }
 
 #text-line{
     margin-bottom: .8rem;
 }
 
-.skills-block{
-    padding: 0;
-    max-width: 700px;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
+.skills-list{
+    max-width: 800px;
+    font-size: 1.1rem;
+    display: grid;
+    grid-template-columns: repeat(4,minmax(180px,1fr));
+    grid-column-gap: 40px;
+    grid-row-gap: 1rem;
+    cursor: pointer;
 }
 
 ul.skills-frontend, 
@@ -60,6 +77,9 @@ h4{
     margin-bottom: 1rem;
 }
 
+.section-contact{
+    padding: 50px;
+}
 
 .contact-icons{
     font-size: 24px;
@@ -71,21 +91,73 @@ h4{
     margin: 0 10px 0 0;
 }
 
+/* tool tip text pop-up skills level */
+.skills-item {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted #8c7851;
+  }
+  
+  .skills-item .skills-tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #8c7851ae;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+/* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .skills-item:hover .skills-tooltiptext {
+    visibility: visible;
+  }
 
 @media screen and (max-width: 1024px){
     .section {
         padding: 50px;
     }
+
+    .skills-list{
+        max-width: 800px;
+        grid-template-columns: repeat(4,minmax(auto,1fr));
+        grid-row-gap: 20px;
+    }
+
 }
 
 @media screen and (max-width: 768px){
     .section {
         display: block;
     }
+
+    .skills-list{
+        grid-template-columns: repeat(3,minmax(auto,1fr));
+        grid-row-gap: 15px;
+    }
+
+    .about-title {
+        padding-bottom: 10px;
+    }
+
 }
 
 @media screen and (max-width: 480px){
     .section {
         padding: 20px;
+    }
+
+    .skills-list {
+        grid-template-columns: repeat(2,minmax(70px,1fr));
+        grid-row-gap: 15px;
+        justify-content: center;
+        align-content: center;
+        margin: 0 auto;
     }
 }
