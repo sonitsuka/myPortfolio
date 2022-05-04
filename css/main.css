@@ -6,17 +6,17 @@ root{
     --main: #fffffe;
     --card-bg: #eaddcf;
     --tertiary: #f25042;
+    --winered: #A7E7E0;
     --accenntcolor: #f9bc60;
     --yellow:#ffd200;
     --yamabuki: #f8b500;
-
-
 }
 
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 html{
@@ -156,6 +156,7 @@ h1{
 .sub-title{
     font-size: 1.8vw;
     max-width: 1100px;
+    padding-bottom: 30px;
 }
 
 ul.contact-btn{
@@ -174,16 +175,25 @@ ul.contact-btn{
     float: left;
 }
 
-
-.contact-btn .iconify{
-    font-size: 28px;
-    margin-right: 15px;
-    display: inline-block;
-    vertical-align: middle;
-    color: var(--headline);
+.section-contact{
+    padding: 50px;
+    font-family: 'Source Code Pro', Courier, monospace;
 }
 
+.contact-icons{
+    font-size: 24px;
+    color: #020826;   
+    padding: 6px 0px;
+}
 
+.contact-icons .social-icon{
+    margin: 0 10px 0 0;
+}
+
+.social-icon a:hover {
+    color: #716040;
+    transition: 0.3s;
+}
 
 .copy-light{
     font-size: .7em;
@@ -208,7 +218,7 @@ ul.contact-btn{
     }
 
     .nav-list{    
-        background-color: #8c7851;
+        background-color: #eaddcf;
         list-style-type: none;
         width: 100%;
         text-align: left;
@@ -236,14 +246,10 @@ ul.contact-btn{
     .active{
         display: block;
     }
-
-    #sub-title{
-        font-size: .9rem;
-    }
 }
 
-@media (min-width:481px) and (max-width:750px){
-    #sub-title{
+@media (max-width:1024px){
+    .sub-title{
         font-size: 1rem;
     }
 }
