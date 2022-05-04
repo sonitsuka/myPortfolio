@@ -1,3 +1,4 @@
+/*  common css  */
 root{
     --bg: #f9f4ef;
     --headline: #020826;
@@ -6,7 +7,6 @@ root{
     --main: #fffffe;
     --card-bg: #eaddcf;
     --tertiary: #f25042;
-    --winered: #A7E7E0;
     --accenntcolor: #f9bc60;
     --yellow:#ffd200;
     --yamabuki: #f8b500;
@@ -19,21 +19,9 @@ root{
 
 }
 
-html{
-    background-color: #020826;
-}
-
 body{
     font-family: "Tsukushi A Round Gothic","Blanco", system-ui,"-apple-system","BlinkMacSystemFont","Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji", "Segoe UI Emoji","Segoe UI Symbol";
     color: var(--headline);
-    background-color: #fffffe;
-    width: 97vw;
-    height: 97vh;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1rem;
-    border-radius: 10px;
-    align-items: center;
 }
 
 a{
@@ -91,10 +79,7 @@ a:focus {
     transition: filter 0.4s ease-in-out 0s, color 0.4s ease-in-out 0.1s;
 }
 
-.logo img{
-    height: 30px;
-    padding: 3px 10px;
-}
+
 
 .menu-btn{
     border-radius: 20px;

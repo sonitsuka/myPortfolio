@@ -1,156 +1,44 @@
-root{
-    --bg: #f9f4ef;
-    --headline: #020826;
-    --darkkahki: #716040;
-    --kahki: #8c7851; /* main kahki color */
-    --main: #fffffe;
-    --card-bg: #eaddcf;
-    --tertiary: #f25042;
-    --accenntcolor: #f9bc60;
-}
-*{
-    margin:0;
-    padding: 0;
-}
-
-html{
-    font-family: "Tsukushi A Round Gothic","Blanco", system-ui,"-apple-system","BlinkMacSystemFont","Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji", "Segoe UI Emoji","Segoe UI Symbol";
-    color: var(--headline);
-    background-color: var(--bg);
-}
-
-a{
-    color: var(--headline);
-}
-
-.container{
-    width: 95%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3rem;
-}
-
-/** Navbar */
+/* Header */
 .navbar{
-    color: var(--headline);
-    background-color: var(--bg);
-    display: flex; 
-    height: 40px;
-    align-items: center;
+    display: flex;
     justify-content: space-between;
-    padding-top: 10px;
-    font-weight: bold;
-    font-size: 1rem;
 }
 
-.nav-list{
-    list-style-type: none;
-    display: none;
-    background-color: #8c7851;
-    width: 100%;
+.logo{
+    height: 30px;
+    padding: 3px 10px;
 }
 
-.nav-list .list-item{
-    display: inline-block;
-    padding: 20px 10px;
-    margin-left: 10px;
-    
-}
-  
-.navbar a {
-    text-align: center;
-    text-decoration: none;
+/* main Sections each project page*/
+.project{
+    display: flex;
+    justify-content:space-between;
+    padding: 3rem;
+    height: 100vh;
 }
 
-.navbar a:hover,
-a:focus{
-    color: #f25042;
-    font-weight: bold;
+.project-img img{
+    max-width: 800px;
 }
 
-#social-icon{
-    font-size:20px;
-    display: inline-block;
-    vertical-align: middle;
+.project-title{
+    padding-bottom: 2rem;
+}
+.project-content{
+    max-width: 420px;
+    padding-left: 15px;
 }
 
-.iconify{
-    padding: 0 2px;
+.project-description{
+    padding-bottom: 1rem;
 }
 
-.menu-btn{
-    border-radius: 18px;
-    line-height: 28px;
-    font-size: 1rem;
-    padding: 5px 15px;
-    border: none;
-    font-family: "Tsukushi A Round Gothic";
-    font-weight: bold;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+.bronder{
+    background-color: #D6A947;
 }
 
-.menu{
-    display: block;
-    position: absolute;
-    right: 15px;
-    top: 15px;
+.portfolio{
+    background-color: #EADDCF;
 }
+ 
 
-.active{
-    display: block;
-}
-
-/* -- main -- */
-.copy-light{
-    font-size: .7em;
-    text-align: center;
-    margin-top: 5rem;
-}
-
-/* Responsive sizing */
-@media all and (max-width:480px){
-    .navbar{
-        position: relative;
-        flex-direction: column; 
-        padding: 0;
-        margin: 0;
-    }
-
-    .menu{
-        display: block;
-        position: absolute;
-        right: 15px;
-        top: 15px;
-    }
-
-    .nav-list{    
-        background-color: #8c7851;
-        list-style-type: none;
-        width: 100%;
-        text-align: left;
-        padding-top: 10px; 
-        font-weight: bold;
-        display: none;
-    }
-
-    .nav-list .list-item{
-        display: block;
-        padding: 4px 10px ;
-    }
-    
-    .navbar .logo{
-        width: 100%;
-    }
-
-    .logo img{
-        height: 16px;
-        margin-left: 10px;
-        margin-top: 20px;
-        padding: 0;
-    }
-
-    .active{
-        display: block;
-    }
-}
