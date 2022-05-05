@@ -6,6 +6,7 @@
 
 html{
     background-color: #fffffe;
+    font-family: "Tsukushi A Round Gothic", "Zen Maru Gothic";
 }
 
 .section {
@@ -16,6 +17,9 @@ html{
 .main-title{
     color:#716040;
     padding-left: 5vw;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .card{
@@ -67,7 +71,7 @@ html{
 .skills-list{
     max-width: 800px;
     font-size: 1.1rem;
-    display: grid;
+    display:grid;
     grid-template-columns: repeat(4,minmax(180px,1fr));
     grid-column-gap: 40px;
     grid-row-gap: 1rem;
