@@ -4,9 +4,12 @@
     box-sizing: border-box;
 }
 
-html{
+html,
+body{
     background-color: #fffffe;
     font-family: "Tsukushi A Round Gothic", "Zen Maru Gothic";
+    width: 100%;
+    height: 100%;
 }
 
 .section {
@@ -78,7 +81,7 @@ html{
     cursor: pointer;
 }
 
-ul.skills-frontend, 
+.skills-frontend, 
 .skills-backend{
     list-style-type: none;
 }

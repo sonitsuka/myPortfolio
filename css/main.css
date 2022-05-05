@@ -23,11 +23,11 @@ root{
 
 body{
     font-family: "Tsukushi A Round Gothic","Zen Maru Gothic", system-ui,"-apple-system","Apple Color Emoji", "Segoe UI Emoji","Segoe UI Symbol";
-    color: var(--headline);
+    color: #020826;
 }
 
 a{
-    color: var(--headline);
+    color: #020826;
 }
 
 main{
@@ -47,13 +47,14 @@ main{
 .navbar{
     color: var(--headline);
     background-color: var(--bg);
+    font-family: "Tsukushi A Round Gothic","Zen Maru Gothic";
     display: flex; 
     align-items: center;
     justify-content: flex-end;
     padding: 10px 15px;
 }
 
-ul.nav-list{
+.nav-list{
     list-style-type: none;
 }
 
@@ -147,22 +148,6 @@ h1{
     padding-bottom: 30px;
 }
 
-ul.contact-btn{
-    list-style-type: none;
-    font-family: inherit;
-    font-size: 1rem;
-    margin-top: 2rem;
-    line-height: 2.5rem;   
-    align-items: center;
-    border-radius: 5px;
-    
-}
-
-.social-icon{
-    display: inline;
-    float: left;
-}
-
 .section-contact{
     padding: 50px;
     font-family: 'Source Code Pro', Courier, monospace;
@@ -178,6 +163,11 @@ ul.contact-btn{
     margin: 0 10px 0 0;
 }
 
+.social-icon{
+    display: inline;
+    float: left;
+}
+
 .social-icon a:hover {
     color: #716040;
     transition: 0.3s;
@@ -191,7 +181,12 @@ ul.contact-btn{
 
 /* Responsive sizing */
 @media all and (max-width:480px){
+    a{
+        color: #020826;
+    }
+
     .navbar{
+        font-family: "Tsukushi A Round Gothic","Zen Maru Gothic";
         position: relative;
         flex-direction: column; 
         padding: 0;
@@ -221,11 +216,12 @@ ul.contact-btn{
     }
     
     .navbar .logo{
-        width: 100%;
+        width: 80%;
     }
 
     .logo img{
         height: 16px;
+        width: auto;
         margin-left: 10px;
         margin-top: 20px;
         padding: 0;
