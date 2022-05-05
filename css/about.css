@@ -168,6 +168,12 @@ h4{
 }
 
 @media screen and (max-width: 480px){
+
+    .main-title{
+        color:#716040;
+        padding: 20px;
+    }
+
     .section {
         padding: 20px;
     }
@@ -178,5 +184,9 @@ h4{
         justify-content: center;
         align-content: center;
         margin: 0 auto;
+    }
+
+    .about-title{
+        font-size: 1rem;
     }
 }
