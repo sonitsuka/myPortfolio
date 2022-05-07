@@ -143,7 +143,7 @@ h1{
 }
 
 .sub-title{
-    font-size: 1.8vw;
+    font-size: 1.3rem;
     max-width: 1100px;
     padding-bottom: 30px;
 }
@@ -183,6 +183,7 @@ h1{
 @media all and (max-width:480px){
     a{
         color: #020826;
+        font-family: "Tsukushi A Round Gothic","Zen Maru Gothic";
     }
 
     .navbar{
@@ -194,6 +195,7 @@ h1{
     }
 
     .menu{
+        color: #020826;
         display: block;
         position: absolute;
         right: 15px;
@@ -201,6 +203,7 @@ h1{
     }
 
     .nav-list{    
+        color: #020826;
         background-color: #eaddcf;
         list-style-type: none;
         width: 100%;
@@ -216,12 +219,11 @@ h1{
     }
     
     .navbar .logo{
-        width: 80%;
+        width: 100%;
     }
 
     .logo img{
-        height: 16px;
-        width: auto;
+        width: 80%;
         margin-left: 10px;
         margin-top: 20px;
         padding: 0;
@@ -234,6 +236,6 @@ h1{
 
 @media (max-width:1024px){
     .sub-title{
-        font-size: 1rem;
+        font-size: .9rem;
     }
 }
