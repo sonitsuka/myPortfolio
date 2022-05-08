@@ -1,3 +1,18 @@
+// page transition in Home 
+const mainTitle = document.querySelector('#main-title')
+const slider = document.querySelector('.slider')
+const header = document.querySelector('#header-section')
+const sub = document.querySelector('#sub-content')
+const footer = document.querySelector('#footer-section')
+const bg = document.querySelector('.bg')
+
+const tlHome = new TimelineMax()
+
+tlHome.fromTo(mainTitle, 1, {width: '100%'}, {height: '100%', ease: Power2.easeInOut}
+).fromTo(sub, 1.2, {opacity:0, x:-30}, {opacity:1, x:0}, '-=.1'
+).fromTo(header, 1.2, {opacity:0, x:30}, {opacity:1, x:0}, '-=1.2'
+).fromTo(footer, 1, {opacity:0, x:-50}, {opacity:1, x:0}, '-=1') 
+
 //page in buttom to up
 //pageTl.to(".slider", {y:"-220%", duration:1, opacity:.8})
 //pageTl.to(".card", {y:"0%", duration:1.2, opacity:1}, "-=1")

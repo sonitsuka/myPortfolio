@@ -1,11 +1,19 @@
 /* specific css for index.html */
 
 html{
-    background-image: linear-gradient(to bottom, #000000, #000000, #010000, #010001, #010001, #191819, #2b282b, #3e3a3d, #6e6566, #a19490, #d2c7bc, #ffffee);
-    background-repeat: no-repeat;
+    margin: 0;
+    top: 0;
+    left: 0;
 }
 
-body{
+.bg{
+    background-image: linear-gradient(to bottom, #000000, #000000, #010000, #010001, #010001, #191819, #2b282b, #3e3a3d, #6e6566, #a19490, #d2c7bc, #ffffee);
+    background-repeat: no-repeat;
+    margin: 0;
+    
+}
+
+.bg-layer{
     background-color: #fffffe;
     width: 97vw;
     height: 97vh;
@@ -16,10 +24,25 @@ body{
     align-items: center;
 }
 
+#main-title{
+    background-color: #fffffe;
+}
+
 .contact-icons{
     font-size: 24px;
     color: #020826;   
     padding: 6px 0px;
+}
+
+/* animation  */
+.slider{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: red;
+    z-index: -1;
 }
 
 @media screen and (max-width: 768px){
