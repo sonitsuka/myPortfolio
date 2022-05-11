@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap');
 *{
     margin:0;
     padding: 0;
@@ -17,12 +18,11 @@ body{
     display: flex;
 }
 
-.main-title{
+.main-title h1{
+    font-family: 'Yuji Syuku', serif;
     color:#716040;
     padding-left: 5vw;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+
 }
 
 .card{
