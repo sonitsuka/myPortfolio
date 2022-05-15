@@ -10,19 +10,15 @@
     /*========== Colors ==========*/
     --hue-color: 40; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
-    --darkkahki: #716040;
-    --kahki: #8c7851; /* main kahki color */
     --main: #f9f4ef;
     --card-bg: #eaddcf;
     --tertiary: #f25042;
-    --accenntcolor: #f9bc60;
     --yellow:#ffd200;
     --yamabuki: #f8b500;
 
-    --first-color: hsl(var(--hue-color), 69%, 61%);
-    --first-color-second: hsl(var(--hue-color), 69%, 61%);
-    --first-color-alt: hsl(var(--hue-color), 57%, 53%);
-    --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+    --first-color: #8c7851;
+    --first-color-second: #716040;
+    --first-color-alt: #f9bc60;;
     --title-color: #020826;
     --text-color: hsl(230, 90%, 8%);
     --text-color-light: #fffffe;
@@ -130,7 +126,8 @@ img {
 
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
-  padding: 1.5rem;
+    height: 100vh;
+    padding: 1.5rem;
 }
 
 .section__title {
@@ -164,20 +161,21 @@ img {
 
 .header {
   width: 100%;
+  height: 5rem;
   position: fixed;
+  align-items: center;
   top: 0;
   left: 0;
-  z-index: var(--z-fixed);
 }
 
 /*==================== NAV ====================*/
 .nav{
-    max-width: 968px;
     height: var(--header-height);
     color: var(--headline);
     display: flex; 
-    align-items: center;
+    align-items: bottom;
     justify-content: flex-end;
+    padding: 2rem;
 }
 
 .nav__logo,
@@ -186,8 +184,9 @@ img {
     font-weight: var(--font-medium);
 }
 
-.nav__list  .nav__item{
+.nav__item{
     display: inline-block;
+    padding-right: 10px;
 }
 
 .nav__toggle{
@@ -195,7 +194,9 @@ img {
     cursor: pointer;
 }
 
-
+#nav__menu{
+    margin-top: 1rem;
+}
 /* show menu */
 
 
@@ -242,6 +243,8 @@ a:focus {
     font-weight: bold;
     font-weight: 700;
     font-size: 6.2vw !important; 
+    margin-top: 5rem;
+    color: #000;
 }
 
 #home__headline img{
@@ -251,7 +254,7 @@ a:focus {
 
 .home__subtitle{
     font-size: 1.3rem;
-    max-width: 890px;
+    max-width: 1000px;
     padding-bottom: 30px;
 }
 
@@ -310,6 +313,10 @@ a:focus {
 }
 
 /*==================== SKILLS ====================*/
+.skills{
+    margin-top: 2rem;
+}
+
 .skills-list{
     max-width: 800px;
     font-size: 1.1rem;
