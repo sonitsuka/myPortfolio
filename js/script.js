@@ -24,16 +24,24 @@ navClose = document.getElementById('nav-close')
 /*==================== ACCORDION SKILLS ====================*/
 
 
-/*==================== QUALIFICATION TABS ====================*/
-
-
-/*==================== SERVICES MODAL ====================*/
 
 
 /*==================== PORTFOLIO SWIPER  ====================*/
+let swiper = new Swiper (".work__container", {
+    cssMode:true,
+    loop:true,
 
+    pagination: {
+      el: ".swiper-pagination",
+      clicable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+});
 
-/*==================== TESTIMONIAL ====================*/
+/*====================  ====================*/
 
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/

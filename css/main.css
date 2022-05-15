@@ -147,11 +147,8 @@ img {
 }
 
 /*==================== LAYOUT ====================*/
-.container {
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  padding:1rem 2rem;
+.container{
+    max-width: 70%;
 }
 
 .grid {
@@ -161,10 +158,9 @@ img {
 
 .header {
   width: 100%;
-  height: 5rem;
   position: fixed;
   align-items: center;
-  top: 0;
+  bottom: 1rem;
   left: 0;
 }
 
@@ -173,9 +169,9 @@ img {
     height: var(--header-height);
     color: var(--headline);
     display: flex; 
-    align-items: bottom;
-    justify-content: flex-end;
-    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
 }
 
 .nav__logo,
@@ -184,10 +180,20 @@ img {
     font-weight: var(--font-medium);
 }
 
+.nav__list{
+    line-height: 3rem;
+    margin: 0;
+    padding: 0 1rem;
+    background-color: #eaddcfc6;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
 .nav__item{
     display: inline-block;
-    padding-right: 10px;
+    padding: 0 10px;
 }
+
 
 .nav__toggle{
     font-size: 1.1rem;
@@ -207,8 +213,11 @@ a:focus {
     transition: filter 0.4s ease-in-out 0s, color 0.4s ease-in-out 0.1s;
 }
 
-/* Change background header */
+.nav__item a:active {
+    border-bottom: 5px double #716040;
+}
 
+/* Change background header */
 .nav__toggle{
     border-radius: 20px;
     padding: 5px 10px;
@@ -237,13 +246,19 @@ a:focus {
     align-items: center;
 }
 
+.home__container {
+    max-width: 86%;
+    margin-left: auto;
+    margin-right: auto;
+    padding:1rem 2rem;
+  }
 
 #home__headline{
     font-family: "Tsukushi A Round Gothic", "Zen Maru Gothic";
     font-weight: bold;
     font-weight: 700;
     font-size: 6.2vw !important; 
-    margin-top: 5rem;
+    margin-top: 4rem;
     color: #000;
 }
 
@@ -372,12 +387,66 @@ a:focus {
 }
 
 /*==================== PORTFOLIO ====================*/
+.work__container{
+    overflow: initial;
+}
 
+.work__content{
+    padding: 0 1.5rem;
+}
+
+.work__img{
+    max-width: 800px;
+    border-radius: .5rem;
+    justify-self: center;
+}
+
+.work__tite{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.work__descripton{
+    margin-bottom: var(--mb-0-75);
+} 
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    content:'';
+}
+
+.swiper-work-icon{
+     font-size: 2rem;
+     color: var(--first-color);
+}
+
+.swiper-button-prev{
+    left: - .5rem;
+}
+
+.swiper-button-next{
+    right: - .5rem;
+}
+
+.swiper-work-horizontal > .swiper-pagination{
+    bottom: -2.5rem;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: var(--first-color);
+    font-weight: bold;
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet{
+    outline:none  ;
+}
 
 /*==================== PROJECT IN MIND ====================*/
 
 
-/*==================== TESTIMONIAL ====================*/
+/*====================  ====================*/
 
 
 

@@ -26,23 +26,21 @@
 <body class="bg">
     <!--==================== HEADER ====================-->
         <header class="header" id="header-section">
-            <nav class="nav container" id ="nav__menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="index.html" class="nav__link">Home</a>
-                    </li> 
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">About</a>
-                    </li>    
-                    <li class="nav__item">
-                        <a href="#work" class="nav__link">Work</a>
-                    </li> 
-                        
-
-                    <li class="nav__item" class="nav__link">
-                        <a href="mailto:info@sonitsuka.com">Contact</a>
-                    </li>
-                </ul>
+            <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">Home</a>
+                        </li> 
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>    
+                        <li class="nav__item">
+                            <a href="#work" class="nav__link">Work</a>
+                        </li> 
+                        <li class="nav__item" class="nav__link">
+                            <a href="mailto:info@sonitsuka.com">Contact</a>
+                        </li>
+                    </ul>
                 <div class="nav__btn" id="toggle-btn">
                     <button class="nav__toggle">Menu</button>
                 </div> 
@@ -54,7 +52,7 @@
         <!--==================== HOME ====================-->
         <section class="home section" id="home">
             <div class="bg-layer">
-                <div class="container">
+                <div class="home__container">
                     <div id="home__headline">
                         <span class="text1"><h1></h1></span>
                         <span class="box"></span>
@@ -64,7 +62,7 @@
                         <h1><span class="text2"></span></h1>
                     </div>
                 </div>
-                <div class="container" id="sub-content">
+                <div class="home__container" id="sub-content">
                     <div class="home__subtitle">
                         based in Germany with a film production & humanities background. Specializing in building and designing user-friendly and client-oriented Web Applications. Oni is a lifelong learner and cooking lover. 
                     </div> 
@@ -158,73 +156,84 @@
         </section>  
 
         <!--==================== PORTFOLIO ====================-->
-        <section class="w ork section" id="work">
+        <section class="work section" id="work">
             <h2 class="section__title">Work</h2>
-            <div class="work__container container">
+            <!-- Swiper -->
+            <div class="work__container container swiper">
+                <div class="swiper-wrapper">
                 <!--==================== PORTFOLIO 1 ====================-->
-                <div class="work__content grid">
-                    <img src="image/portfolio1.png" alt="">
-                    <div class="work__data">
-                        <h3 class="work__title">Illustrator’s Website</h3>
-                    
-                        <p class="work__description"><strong>Ver. 1:</strong> Made prototype in <strong>Figma</strong>, then implemented by <strong>React Gastby & Sass</strong></p>
-                        <br>
-                        <p><strong>Ver. 2:</strong> Improved the same prototype by the different implementation; <strong>Responsive Design</strong> with pure <strong>CSS grid & flexbox</strong>. 
-                            Image overlay hover effects with CSS image gallery & <strong>lightbox by JavaScript</strong>, image optimize check by optizill. Responsive Test by <strong>LT Browser & Chrome DevTools</strong>. Domain & Hosting by Strato.de
-                        </p> <br>
-                        <p>
-                            <strong>Client requirements:</strong>  
-                        </p>
-                        <p>
-                        <strong>Function & Design:</strong> Simple design, light mode, the top page has to be the showcase of her work. 
-                        </p>
-                        <p><strong>Admin:</strong> Easy to upload new products without my support.</p>
-                        <br> 
-                        <p>
-                            <strong>Next Issue:</strong>
-                        </p>
-                        <p>smooth image loading </p>
+                    <div class="work__content grid swiper-slide">
+                        <img src="image/portfolio1.png" alt="" class="work__img">
+                        <div class="work__data">
+                            <h3 class="work__title">Illustrator’s Website</h3>
+                        
+                            <p class="work__description"><strong>Ver. 1:</strong> Made prototype in <strong>Figma</strong>, then implemented by <strong>React Gastby & Sass</strong></p>
+                            <br>
+                            <p><strong>Ver. 2:</strong> Improved the same prototype by the different implementation; <strong>Responsive Design</strong> with pure <strong>CSS grid & flexbox</strong>. 
+                                Image overlay hover effects with CSS image gallery & <strong>lightbox by JavaScript</strong>, image optimize check by optizill. Responsive Test by <strong>LT Browser & Chrome DevTools</strong>. Domain & Hosting by Strato.de
+                            </p> <br>
+                            <p>
+                                <strong>Client requirements:</strong>  
+                            </p>
+                            <p>
+                            <strong>Function & Design:</strong> Simple design, light mode, the top page has to be the showcase of her work. 
+                            </p>
+                            <p><strong>Admin:</strong> Easy to upload new products without my support.</p>
+                            <br> 
+                            <p>
+                                <strong>Next Issue:</strong>
+                            </p>
+                            <p>smooth image loading </p>
 
-                        <div class="button button--flex button--small work__btn">
-                            <a href="https://github.com/sonitsuka/bronder-web"><span class="iconify social-icon" data-icon="akar-icons:github-fill"></span></a>
-                            <a href="https://www.figma.com/file/HT9Lr92U1czZ1n9WlO4HCx/Sarah_web?node-id=0%3A1"><span class="iconify social-icon" data-icon="akar-icons:figma-fill"></span></a>
-                            <a href="https://sarahbronder.com/"><span class="iconify social-icon" data-icon="el:website-alt"></span></a>
+                            <div class="button button--flex button--small work__btn">
+                                <a href="https://github.com/sonitsuka/bronder-web"><span class="iconify social-icon" data-icon="akar-icons:github-fill"></span></a>
+                                <a href="https://www.figma.com/file/HT9Lr92U1czZ1n9WlO4HCx/Sarah_web?node-id=0%3A1"><span class="iconify social-icon" data-icon="akar-icons:figma-fill"></span></a>
+                                <a href="https://sarahbronder.com/"><span class="iconify social-icon" data-icon="el:website-alt"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!--==================== PORTFOLIO 2 ====================-->
+                    <div class="work__content grid swiper-slide">
+                        <img src="image/portfolio2.png" alt="" class="work__img">
+                        <div class="work__data">
+                            <h3 class="work__title">My Portfolio</h3>
+                        
+                            <ul>
+                                <li>Mock desine: Figma</li>
+                                <li>Base layout & Responsive Desgine: hard cording with HTML & CSS</li>
+                                <li>Page transition, Text animation & Page scrolling in one page: GSAP & Javascript</li>
+                            </ul>
+                            <div class="button button--flex button--small work__btn">
+                                <a href="https://github.com/sonitsuka/myPortfolio"><span class="iconify social-icon" data-icon="akar-icons:github-fill"></span></a>
+                                <a href="https://www.figma.com/file/dUE05kMrZ6XakurxOB7fQb/myPortfolio?node-id=0%3A1"><span class="iconify social-icon" data-icon="akar-icons:figma-fill"></span></a>
+                                <a href="https://sonitsuka.com/"><span class="iconify social-icon" data-icon="el:website-alt"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--==================== PORTFOLIO 3====================-->
+                    <div class="work__content grid swiper-slide">
+                        <img src="image/portfolio1.png" alt="" class="work__img">
+                        <div class="work__data">
+                            <h3 class="work__title">Japanese potty e-commerce Web Shop App</h3>
+                        
+                            <p class="work__description">Frontend & Admin interface built by <strong>React.js</strong>,Backend built by <strong>Commerce.js, Stripe</strong>
+                            </p>
+
+                            <div class="button button--flex button--small work__btn">
+                                <a href="https://github.com/sonitsuka/ecommerce"><span class="iconify social-icon" data-icon="akar-icons:github-fill"></span></a>
+                                <a href="#"><span class="iconify social-icon" data-icon="akar-icons:figma-fill"></span></a>
+                                <a href="#"><span class="iconify social-icon" data-icon="el:website-alt"></span></a>                        </div>
                         </div>
                     </div>
                 </div>
-                <!--==================== PORTFOLIO 2 ====================-->
-                <div class="work__content grid">
-                    <img src="image/portfolio1.png" alt="">
-                    <div class="work__data">
-                        <h3 class="work__title">My Portfolio</h3>
-                    
-                        <ul>
-                            <li>Mock desine: Figma</li>
-                            <li>Base layout & Responsive Desgine: hard cording with HTML & CSS</li>
-                            <li>Page transition, Text animation & Page scrolling in one page: GSAP & Javascript</li>
-                        </ul>
-                        <div class="button button--flex button--small work__btn">
-                            <a href="https://github.com/sonitsuka/myPortfolio"><span class="iconify social-icon" data-icon="akar-icons:github-fill"></span></a>
-                            <a href="https://www.figma.com/file/dUE05kMrZ6XakurxOB7fQb/myPortfolio?node-id=0%3A1"><span class="iconify social-icon" data-icon="akar-icons:figma-fill"></span></a>
-                            <a href="https://sonitsuka.com/"><span class="iconify social-icon" data-icon="el:website-alt"></span></a>
-                        </div>
-                    </div>
+                <div class="swiper-button-next">
+                    <i class="iconify swiper-work-icon" data-icon="uil:angle-right-b"></i>
                 </div>
-                <!--==================== PORTFOLIO 3====================-->
-                <div class="work__content grid">
-                    <img src="image/portfolio1.png" alt="">
-                    <div class="work__data">
-                        <h3 class="work__title">Japanese potty e-commerce Web Shop App</h3>
-                    
-                        <p class="work__description">Frontend & Admin interface built by <strong>React.js</strong>,Backend built by <strong>Commerce.js, Stripe</strong>
-                        </p>
-
-                        <div class="button button--flex button--small work__btn">
-                            <a href="https://github.com/sonitsuka/ecommerce"><span class="iconify social-icon" data-icon="akar-icons:github-fill"></span></a>
-                            <a href="#"><span class="iconify social-icon" data-icon="akar-icons:figma-fill"></span></a>
-                            <a href="#"><span class="iconify social-icon" data-icon="el:website-alt"></span></a>                        </div>
-                    </div>
+                <div class="swiper-button-prev">
+                    <i class="iconify swiper-work-icon" data-icon="uil:angle-left-b"></i>
                 </div>
+                <div class="swiper-pagination"></div>
             </div>                
         </section>
 
