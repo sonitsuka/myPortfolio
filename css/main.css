@@ -126,7 +126,7 @@ img {
 
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
-    height: 100vh;
+    height: 100%;
     padding: 1.5rem;
 }
 
@@ -160,7 +160,7 @@ img {
   width: 100%;
   position: fixed;
   align-items: center;
-  bottom: 1rem;
+  bottom: 2rem;
   left: 0;
 }
 
@@ -207,6 +207,10 @@ img {
 
 
 /* Active link */
+.active-link{
+    border-bottom: 5px double #716040;
+}
+
 .nav__item a:hover,
 a:focus {
     border-bottom: 5px double #716040;
@@ -218,6 +222,10 @@ a:focus {
 }
 
 /* Change background header */
+.scroll-header{
+    box-shadow: 0 -1px 4px;
+}
+
 .nav__toggle{
     border-radius: 20px;
     padding: 5px 10px;
@@ -239,7 +247,7 @@ a:focus {
 .bg-layer{
     background-color: #fffffe;
     width: 96vw;
-    height: 96vh;
+    height: 95vh;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
@@ -301,12 +309,13 @@ a:focus {
     padding-left: 5vw;
 }
 
-.card{
-    display: block;
-    max-width: 1100px;
+.about__container{
+    display: relative;
+    max-width: 860px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
+    align-items: center;
 }
 
 .about__title{
@@ -452,10 +461,19 @@ a:focus {
 
 
 /*==================== FOOTER ====================*/
-.copy-light{
-    font-size: .7em;
-    text-align: center;
-    margin: 1rem 0;
+.footer{
+     padding-top: 2rem;
+     background-color: var(--card-bg);
+}
+
+.footer__container{
+    margin-top: 2rem;
+    font-family: var(--body-font);
+}
+
+.footer__bg{
+    
+    padding: 2rem 0 3rem;
 }
 
 /*========== SCROLL UP ==========*/
@@ -634,37 +652,6 @@ a:focus {
         font-size: 1rem;
     }
 } 
-
-/* Mouse Couser, 
-.cursor{
-    position: fixed;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #8c7851;
-    opacity: 0.5;
-    transition: .1s;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-}
-
-ul li:hover ~ .cursor,
-a:hover ~ .cursor,
-a:hover.contact-btn ~ .cursor{
-    transform: scale(3);
-}
-
-// Animation 
-.box{
-    position: relative;
-    bottom: 0;
-    display: inline-block;
-    background-color: aqua;
-    z-index: -1 ;
-}*/
-
-
-
 
 
 
