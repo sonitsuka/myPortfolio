@@ -1,13 +1,48 @@
-// Navbar 
-        const toggleBtn = document.getElementById('toggle-btn')
-        const navList = document.querySelector('.nav-list')
+/*==================== Navbar MENU SHOW Y HIDDEN ====================*/
+const toggleBtn = document.getElementById('toggle-btn')
+const navList = document.querySelector('.nav__list')
 
-        toggleBtn.addEventListener('click', () => {
-            navList.classList.toggle('active');
-        })
-        /*
-        const cursor1 = document.querySelector('.cursor');
-        document.addEventListener('mousemove', (e) => {
-            cursor1.style.left = e.clientX + 'px'
-            cursor1.style.top = e.clientY + 'px'
-        })*/
+toggleBtn.addEventListener('click', () => {
+    navList.classList.toggle('active');
+})
+
+const navMenu = document.getElementById('nav-menu'),
+navToggle = document.getElementById('nav-toggle'),
+navClose = document.getElementById('nav-close')
+
+/*===== MENU SHOW =====*/
+/* Validate if constant exists */
+ 
+
+/*===== MENU HIDDEN =====*/
+/* Validate if constant exists */
+
+
+/*==================== REMOVE MENU MOBILE ====================*/
+
+
+/*==================== ACCORDION SKILLS ====================*/
+
+
+/*==================== QUALIFICATION TABS ====================*/
+
+
+/*==================== SERVICES MODAL ====================*/
+
+
+/*==================== PORTFOLIO SWIPER  ====================*/
+
+
+/*==================== TESTIMONIAL ====================*/
+
+
+/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+
+
+/*==================== CHANGE BACKGROUND HEADER ====================*/ 
+
+
+/*==================== SHOW SCROLL UP ====================*/ 
+
+
+/*==================== CHANGE LANGUAGES ====================*/ 

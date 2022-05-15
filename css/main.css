@@ -1,90 +1,214 @@
+/*==================== GOOGLE FONTS ====================*/
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,600&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,300&family=Libre+Baskerville:wght@400;700&family=Merriweather:ital,wght@0,700;1,300;1,700&family=Montserrat:wght@200;400;500;800;900&family=Roboto:wght@100;300;400;500;700&family=Sawarabi+Mincho&family=Zen+Maru+Gothic:wght@300;400;500;700;900&family=Zen+Old+Mincho:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap');
 
-/*  common css  */
-root{
-    --bg: #f9f4ef;
-    --headline: #020826;
+
+/*==================== VARIABLES CSS ====================*/
+:root {
+    --header-height: 3rem;
+
+    /*========== Colors ==========*/
+    --hue-color: 40; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+
     --darkkahki: #716040;
     --kahki: #8c7851; /* main kahki color */
-    --main: #fffffe;
+    --main: #f9f4ef;
     --card-bg: #eaddcf;
     --tertiary: #f25042;
     --accenntcolor: #f9bc60;
     --yellow:#ffd200;
     --yamabuki: #f8b500;
+
+    --first-color: hsl(var(--hue-color), 69%, 61%);
+    --first-color-second: hsl(var(--hue-color), 69%, 61%);
+    --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+    --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+    --title-color: #020826;
+    --text-color: hsl(230, 90%, 8%);
+    --text-color-light: #fffffe;
+    --input-color: hsl(var(--hue-color), 70%, 96%);
+    --body-color: #fffffe;
+    --container-color: #fffffe;
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+
+    /*========== Font and typography ==========*/
+    --body-font: "Tsukushi A Round Gothic","Zen Maru Gothic",sans-serif;
+
+    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /*========== Margenes Bottom ==========*/
+    /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
 }
 
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-
+/* Font size for large devices */
+@media screen and (min-width: 968px) {
+    :root {
+        --big-font-size: 3rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
 }
 
-body{
-    font-family: "Tsukushi A Round Gothic","Zen Maru Gothic", system-ui,"-apple-system","Apple Color Emoji", "Segoe UI Emoji","Segoe UI Symbol";
-    color: #020826;
+/*========== Button ==========*/
+
+
+/*==================== BASE ====================*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-a{
-    color: #020826;
+html {
+  scroll-behavior: smooth;
 }
 
-main{
-    align-items: center;
-    min-height: 75vh;
+body {
+  margin: 0 0 var(--header-height) 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
 }
 
-.container{
-    width: 90%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2rem;
+h2, h3, h4 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: .5rem;
 }
 
-/** Header Navbar */
-.navbar{
+
+h1{
+    font-family: var(--body-font);
+    font-weight: bold;
+    font-weight: 700;
+    font-size: 6.2vw !important; 
+}
+    
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #020826;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*==================== REUSABLE CSS CLASSES ====================*/
+.section {
+  padding: 1.5rem;
+}
+
+.section__title {
+  font-size: var(--h2-font-size);
+  color: var(--title-color);
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-3);
+}
+
+.section__title, 
+.section__subtitle {
+  text-align: left;
+}
+
+/*==================== LAYOUT ====================*/
+.container {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding:1rem 2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+}
+
+/*==================== NAV ====================*/
+.nav{
+    max-width: 968px;
+    height: var(--header-height);
     color: var(--headline);
-    background-color: var(--bg);
-    font-family: "Tsukushi A Round Gothic","Zen Maru Gothic";
     display: flex; 
     align-items: center;
     justify-content: flex-end;
-    padding: 10px 15px;
 }
 
-.nav-list{
-    list-style-type: none;
+.nav__logo,
+.nav__toggle{
+    color: var(--title-color);
+    font-weight: var(--font-medium);
 }
 
-.nav-list .list-item{
+.nav__list  .nav__item{
     display: inline-block;
-    padding: 10px;
 }
 
-/* alternative 
-.nav-list li{
-    display: inline;
-    float: left;
-    padding: 20px 10px;
-}
-*/
-  
-.navbar a {
-    text-align: center;
-    text-decoration: none;
+.nav__toggle{
+    font-size: 1.1rem;
+    cursor: pointer;
 }
 
-.list-item a:hover,
+
+/* show menu */
+
+
+/* Active link */
+.nav__item a:hover,
 a:focus {
     border-bottom: 5px double #716040;
     transition: filter 0.4s ease-in-out 0s, color 0.4s ease-in-out 0.1s;
 }
 
+/* Change background header */
 
-
-.menu-btn{
+.nav__toggle{
     border-radius: 20px;
     padding: 5px 10px;
     border: none;
@@ -92,9 +216,348 @@ a:focus {
     font-weight: bold;
 }
 
-.menu{
+.nav__toggle{
     display: none;
 }
+/*==================== HOME ====================*/
+.home{
+    background-image: linear-gradient(to bottom, #000000, #000000, #010000, #010001, #010001, #191819, #2b282b, #3e3a3d, #6e6566, #a19490, #d2c7bc, #ffffee);
+    background-repeat: no-repeat;
+    margin: 0; 
+}
+
+.bg-layer{
+    background-color: #fffffe;
+    width: 96vw;
+    height: 96vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    align-items: center;
+}
+
+
+#home__headline{
+    font-family: "Tsukushi A Round Gothic", "Zen Maru Gothic";
+    font-weight: bold;
+    font-weight: 700;
+    font-size: 6.2vw !important; 
+}
+
+#home__headline img{
+    width: 24vw;
+    margin-left: 5px;
+}
+
+.home__subtitle{
+    font-size: 1.3rem;
+    max-width: 890px;
+    padding-bottom: 30px;
+}
+
+/*==================== BUTTONS ====================*/
+.contact-icons{
+    font-size: 24px;
+    color: #020826;   
+    padding: 6px 0px;
+}
+
+.contact-icons .social-icon{
+    margin: 0 10px 0 0;
+}
+
+.social-icon{
+    display: inline;
+    float: left;
+}
+
+.social-icon a:hover {
+    color: #716040;
+    transition: 0.3s;
+}
+
+/*==================== ABOUT ====================*/
+.about__headline h1{
+    font-family: 'Yuji Syuku', serif;
+    color:#716040;
+    padding-left: 5vw;
+}
+
+.card{
+    display: block;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.about__title{
+    flex-shrink: 0;
+    width: 160px;
+    text-align: left;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+
+.about__description{
+    font-size: 1.2rem;
+    max-width: 800px;
+    line-height: 1.8rem;
+}
+
+#text-line{
+    margin-bottom: .8rem;
+}
+
+/*==================== SKILLS ====================*/
+.skills-list{
+    max-width: 800px;
+    font-size: 1.1rem;
+    display:grid;
+    grid-template-columns: repeat(4,minmax(180px,1fr));
+    grid-column-gap: 40px;
+    grid-row-gap: 1rem;
+    cursor: pointer;
+}
+
+.skills-frontend, 
+.skills-backend{
+    list-style-type: none;
+}
+
+.skills-item{
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+/* tool tip text pop-up skills level */
+.skills-item {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted #8c7851;
+  }
+  
+  .skills-item .skills-tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #8c7851ae;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+/* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .skills-item:hover .skills-tooltiptext {
+    visibility: visible;
+  }
+
+/*==================== CONTACT ME ====================*/
+.contact{
+    padding: 50px;
+    font-family: 'Source Code Pro', Courier, monospace;
+}
+
+/*==================== PORTFOLIO ====================*/
+
+
+/*==================== PROJECT IN MIND ====================*/
+
+
+/*==================== TESTIMONIAL ====================*/
+
+
+
+
+/*==================== FOOTER ====================*/
+.copy-light{
+    font-size: .7em;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+/*========== SCROLL UP ==========*/
+
+
+/* Show scroll */
+
+
+/*========== SCROLL BAR ==========*/
+
+
+/*==================== MEDIA QUERIES ====================*/
+/* For small devices */
+@media all and (max-width:480px){
+    a{
+        color: #020826;
+        font-family: var(--body-font);
+    }
+
+    .nav__menu{
+        font-family: var(--body-font);
+        position: relative;
+        flex-direction: column; 
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav__toggle{
+        color: #020826;
+        display: block;
+        position: absolute;
+        right: 15px;
+        bottom: .3rem;
+        cursor: pointer;
+    }
+
+    .nav__list{    
+        color: #020826;
+        background-color: #eaddcf;
+        list-style-type: none;
+        width: 100%;
+        text-align: left;
+        padding-top: 10px; 
+        font-weight: bold;
+        display: none;
+    }
+
+    .nav__list .nav__item{
+        display: block;
+        padding: 4px 10px ;
+    }
+    
+    .nav .nav__logo{
+        width: 100%;
+    }
+
+    .nav__logo img{
+        width: 80%;
+        margin-left: 10px;
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .active{
+        display: block;
+    }
+}
+
+/* For medium devices */
+@media all and (max-width:767px){
+    .nav__menu{
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--card-bg);
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+        border-radius: .5rem .5rem 0 0;
+        transition: .3s;
+    }
+    .nav__list{
+        grid-template-columns: repeat(3,1fr);
+        gap: 2rem;
+    }
+
+    .nav__link{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: var(--small-font-size);
+        color: var(--title-color);
+        font-weight: var(--font-medium);
+    }
+
+    .nav__link:hover{
+        color: var(--first-color);
+    }
+
+    .nav__close{
+        position: absolute;
+        right: 1.3rem;
+        bottom: .5rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: var(--first-color);
+    }
+
+    .nav__close:hover{
+        background-color: #716040;
+    }
+}
+
+/* For large devices */
+@media (max-width:1024px){
+    .sub-title{
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    html{
+        background-image: none;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .section {
+        padding: 50px;
+    }
+
+    .skills-list{
+        max-width: 800px;
+        grid-template-columns: repeat(4,minmax(auto,1fr));
+        grid-row-gap: 20px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .section {
+        display: block;
+    }
+
+    .skills-list{
+        grid-template-columns: repeat(3,minmax(auto,1fr));
+        grid-row-gap: 15px;
+    }
+
+    .about__title {
+        padding-bottom: 10px;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+
+    .about__headline{
+        color:#716040;
+        padding: 20px;
+    }
+
+    .section {
+        padding: 20px;
+    }
+
+    .skills-list {
+        grid-template-columns: repeat(2,minmax(70px,1fr));
+        grid-row-gap: 15px;
+        justify-content: center;
+        align-content: center;
+        margin: 0 auto;
+    }
+
+    .about__title{
+        font-size: 1rem;
+    }
+} 
 
 /* Mouse Couser, 
 .cursor{
@@ -123,119 +586,14 @@ a:hover.contact-btn ~ .cursor{
     background-color: aqua;
     z-index: -1 ;
 }*/
-/* -- main -- */
-main{
-    align-items: center;
-}
 
-.text1,
-.text2,
-h1{
-    font-family: "Tsukushi A Round Gothic", "Zen Maru Gothic";
-    font-weight: bold;
-    font-weight: 700;
-    font-size: 6.2vw !important; 
-}
 
-#main-title img{
-    width: 24vw;
-    margin-left: 8px;
-}
 
-.sub-title{
-    font-size: 1.3rem;
-    max-width: 1100px;
-    padding-bottom: 30px;
-}
 
-.section-contact{
-    padding: 50px;
-    font-family: 'Source Code Pro', Courier, monospace;
-}
 
-.contact-icons{
-    font-size: 24px;
-    color: #020826;   
-    padding: 6px 0px;
-}
 
-.contact-icons .social-icon{
-    margin: 0 10px 0 0;
-}
 
-.social-icon{
-    display: inline;
-    float: left;
-}
 
-.social-icon a:hover {
-    color: #716040;
-    transition: 0.3s;
-}
 
-.copy-light{
-    font-size: .7em;
-    text-align: center;
-    margin: 1rem 0;
-}
 
-/* Responsive sizing */
-@media all and (max-width:480px){
-    a{
-        color: #020826;
-        font-family: "Tsukushi A Round Gothic","Zen Maru Gothic";
-    }
 
-    .navbar{
-        font-family: "Tsukushi A Round Gothic","Zen Maru Gothic";
-        position: relative;
-        flex-direction: column; 
-        padding: 0;
-        margin: 0;
-    }
-
-    .menu{
-        color: #020826;
-        display: block;
-        position: absolute;
-        right: 15px;
-        top: 15px;
-    }
-
-    .nav-list{    
-        color: #020826;
-        background-color: #eaddcf;
-        list-style-type: none;
-        width: 100%;
-        text-align: left;
-        padding-top: 10px; 
-        font-weight: bold;
-        display: none;
-    }
-
-    .nav-list .list-item{
-        display: block;
-        padding: 4px 10px ;
-    }
-    
-    .navbar .logo{
-        width: 100%;
-    }
-
-    .logo img{
-        width: 80%;
-        margin-left: 10px;
-        margin-top: 20px;
-        padding: 0;
-    }
-
-    .active{
-        display: block;
-    }
-}
-
-@media (max-width:1024px){
-    .sub-title{
-        font-size: .9rem;
-    }
-}

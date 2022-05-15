@@ -9,8 +9,7 @@ html{
 .bg{
     background-image: linear-gradient(to bottom, #000000, #000000, #010000, #010001, #010001, #191819, #2b282b, #3e3a3d, #6e6566, #a19490, #d2c7bc, #ffffee);
     background-repeat: no-repeat;
-    margin: 0;
-    
+    margin: 0;   
 }
 
 .bg-layer{
@@ -19,7 +18,6 @@ html{
     height: 97vh;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1rem;
     border-radius: 10px;
     align-items: center;
 }
