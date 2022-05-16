@@ -110,7 +110,7 @@ let cursor = gsap.to('.cursor', {opacity: 0, ease: "power2.inOut", repeat: -1})
 
 const tlAbout = gsap.timeline();
 tlAbout.to('.contact-msg', 
-{duration: 1.4, yoyo: true, repeat:2,
+{duration: 1.4, yoyo: true, repeat:10,
 repeatDelay:1,
 text:"Say hello to me? I'd love to hear from you"})
 
