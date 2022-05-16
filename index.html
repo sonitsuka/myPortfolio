@@ -27,6 +27,7 @@
     <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav">
+                <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
                             <a href="index.html" class="nav__link active-link">Home</a>
@@ -38,9 +39,10 @@
                             <a href="#work" class="nav__link">Work</a>
                         </li> 
                         <li class="nav__item" class="nav__link">
-                            <a href="mailto:info@sonitsuka.com">Contact</a>
+                            <a href="#contact">Contact</a>
                         </li>
                     </ul>
+                </div>
                 <div class="nav__btn" id="toggle-btn">
                     <button class="nav__toggle">Menu</button>
                 </div> 
@@ -153,11 +155,32 @@
                         </div>  
                     </div>            
                 </div>
+            </div>  
+        </section> 
+        <!--==================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
+            <div class="container contact__container">
+                <span class="contact-msg"></span>
+                <span class="cursor">_</span>            
+                <div class="contact-icons">
+                    <span class="social-icon">
+                        <a href="mailto:info@sonitsuka.com">
+                            <span class="iconify" data-icon="eva:email-fill"></span>
+                        </a>
+                    </span> 
+                    <span class="social-icon">
+                        <a href="https://github.com/sonitsuka">
+                            <span class="iconify" data-icon="akar-icons:github-fill"></span>
+                        </a>
+                    </span>
+                    <span class="social-icon">
+                        <a href="https://www.linkedin.com/in/shiho-o-76089218/">
+                            <span class="iconify" data-icon="akar-icons:linkedin-box-fill"></span>
+                        </a>
+                    </span>
+                </div>
             </div>
-            
-            
-                
-        </section>  
+        </section> 
 
         <!--==================== PORTFOLIO ====================-->
         <section class="work section" id="work">
@@ -245,17 +268,11 @@
         <section class="project section">
             
 
-        </section>
-
-        <!--==================== CONTACT ME ====================-->
-        
+        </section> 
     </main>
-
     <!--==================== FOOTER ====================-->
     <footer class="footer">
-        <section class="contact section" id="contact">
-                <span class="contact-msg"></span>
-                <span class="cursor">_</span>            
+                   
                 <div class="contact-icons">
                     <span class="social-icon">
                         <a href="mailto:info@sonitsuka.com">
@@ -276,13 +293,14 @@
                 <div class="footer__container container grid">
                     <small>&copy; 2022 Designed and Built by Shiho Onitsuka</small>
                 </div>
-        </section> 
     </footer>
     
-    <!--==================== SCROLL TOP ====================-->
-    
+    <!--==================== SCROLL UP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="iconify scrollup__icon  " data-icon="akar-icons:arrow-up"></i>
+    </a>
 
-    <!--==================== SWIPER, icon, JS ====================-->
+    <!--==================== SWIPER, ICON, GSAP JS ====================-->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
@@ -291,10 +309,7 @@
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
 
     <!--==================== MAIN JS ====================-->
-    <script src="./js/textAnimation.js"></script>
     <script src="./js/script.js"></script>
-    <script src="/js/pageTransition.js"></script>
-
     </div>
 </body>
 </html>

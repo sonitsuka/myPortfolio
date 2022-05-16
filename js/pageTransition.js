@@ -20,7 +20,7 @@ tlHome.fromTo(mainTitle, 1, {width: '100%'}, {height: '100%', ease: Power2.easeI
 // Landing Page with fede-in in About
 const pageTl = gsap.timeline({defaults: {ease:"power2.out"}})
 pageTl.fromTo(".card", {opacity: 0}, {opacity:1, duration:1})
-pageTl.fromTo(".main-title", {opacity: 0}, {opacity:1, duration:1.2})
+pageTl.fromTo(".about__title", {opacity: 0}, {opacity:1, duration:1.2})
 //pageTl.fromTo(".project", {opacity: 0}, {opacity:1, duration:.2})
 
 // Landing Page with smooth scroll in Work
