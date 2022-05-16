@@ -164,6 +164,7 @@ img {
   position: fixed;
   bottom: 1.8rem;
   left: 0;
+  z-index: var(--z-fixed);
 }
 
 /*==================== NAV ====================*/
@@ -414,6 +415,7 @@ a:focus {
     padding: 0 1.5rem;
     display: flex;
     align-items: center;
+    vertical-align: middle;
 }
 
 .work__img{
