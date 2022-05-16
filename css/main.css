@@ -28,6 +28,8 @@
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
+    --swiper-theme-color: #716040;
+
     /*========== Font and typography ==========*/
     --body-font: "Tsukushi A Round Gothic","Zen Maru Gothic",sans-serif;
 
@@ -397,7 +399,7 @@ a:focus {
 /*==================== PORTFOLIO ====================*/
 .work{
     margin-top: 3rem;
-    height: 100vh;
+    height: 98vh;
 }
 
 .work__container{
@@ -408,6 +410,7 @@ a:focus {
 }
 
 .work__content{
+    margin-top: 1rem;
     padding: 0 1.5rem;
     display: flex;
     align-items: center;
@@ -430,13 +433,13 @@ a:focus {
     margin-bottom: var(--mb-0-5);
 }
 
-.work__descripton{
+.work__description{
     margin-bottom: var(--mb-0-75);
 } 
 
 .work__btn{
     font-size: 24px;
-    padding: 1rem 0;
+    padding: .5rem 0;
     color: var(--first-color);
     display: flex;
     justify-content: flex-end;
@@ -458,6 +461,7 @@ a:focus {
 .swiper-button-next::after{
     content:'';
 }
+
 
 .swiper-work-icon{
      font-size: 2rem;

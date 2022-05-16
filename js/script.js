@@ -54,7 +54,7 @@ let swiper = new Swiper (".work__container", {
 
     pagination: {
       el: ".swiper-pagination",
-      clicable: true,
+      type: "progressbar",
     },
     navigation: {
       nextEl: ".swiper-button-next",
