@@ -126,7 +126,6 @@ img {
 
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
-    height: 100%;
     padding: 1.5rem;
 }
 
@@ -149,6 +148,8 @@ img {
 /*==================== LAYOUT ====================*/
 .container{
     max-width: 70%;
+    margin: auto;
+    position: relative;
 }
 
 .grid {
@@ -158,8 +159,7 @@ img {
 
 .header {
   width: 100%;
-  position: fixed;
-  align-items: center;
+  position: absolute;
   bottom: 2rem;
   left: 0;
 }
@@ -170,7 +170,7 @@ img {
     color: var(--headline);
     display: flex; 
     align-items: center;
-    justify-content: center;
+    justify-content:center;
     padding: 2rem 0;
 }
 
@@ -222,9 +222,9 @@ a:focus {
 }
 
 /* Change background header */
-.scroll-header{
+/* .scroll-header{
     box-shadow: 0 -1px 4px rgba(0, 0, 0, .15) ;
-}
+} */
 
 .nav__toggle{
     border-radius: 20px;
@@ -283,13 +283,13 @@ a:focus {
 
 /*==================== BUTTONS ====================*/
 .contact-icons{
-    font-size: 24px;
-    color: #020826;   
+    color: var(--title-color);   
+    font-size: 1.8rem;
     padding: 6px 0px;
 }
 
-.contact-icons .social-icon{
-    margin: 0 10px 0 0;
+.social-icon{
+    margin: 0 .5rem;
 }
 
 .social-icon{
@@ -298,7 +298,7 @@ a:focus {
 }
 
 .social-icon a:hover {
-    color: #716040;
+    color: var(--first-color-second);
     transition: 0.3s;
 }
 
@@ -306,15 +306,14 @@ a:focus {
 .about__headline h1{
     font-family: 'Yuji Syuku', serif;
     color:#716040;
-    padding-left: 5vw;
+    margin-bottom: 2rem;
 }
 
 .about__container{
-    display: relative;
+    width:100%;
     max-width: 860px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
+    margin: 0px auto;
+    border-radius: 5px;
     align-items: center;
 }
 
@@ -396,18 +395,29 @@ a:focus {
 }
 
 /*==================== PORTFOLIO ====================*/
+.work{
+    margin-top: 3rem;
+}
+
 .work__container{
     overflow: initial;
 }
 
 .work__content{
     padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
 }
 
 .work__img{
-    max-width: 500px;
+    max-width: 380px;
+    height: 100%;
     border-radius: .5rem;
     justify-self: center;
+}
+
+.work__data{
+    padding: 1rem 2rem 0rem;
 }
 
 .work__tite{
@@ -418,6 +428,26 @@ a:focus {
 .work__descripton{
     margin-bottom: var(--mb-0-75);
 } 
+
+.work__btn{
+    font-size: 24px;
+    padding: 1rem 0;
+    color: var(--first-color);
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.work__btn .social-icon{
+    color: var(--first-color);
+}
+
+.work__btn .social-icon a:hover{
+    color: var(--first-color-alt);
+    transition: 0.3s;
+}
+
+
 
 .swiper-button-prev::after,
 .swiper-button-next::after{
@@ -462,20 +492,26 @@ a:focus {
 
 /*==================== FOOTER ====================*/
 .footer{
-     padding-top: 2rem;
-     background-color: var(--card-bg);
+    width: 100%;
+    bottom: 0;
+
+     background-color: transparent;
+
 }
 
 .footer__container{
-    margin-top: 2rem;
     font-family: var(--body-font);
+    display: flex;
+    justify-content:center;
 }
 
 .footer__bg{
     
     padding: 2rem 0 3rem;
 }
-
+.Footer__copylight{
+    font-size: .7rem;
+}
 /*========== SCROLL UP ==========*/
 .scrollup__icon{
     position: fixed;
@@ -483,7 +519,7 @@ a:focus {
     bottom: -20%;
     background-color: var(--first-color);
     opacity: .8;
-    padding: 0 .3 rem;
+    padding: 0 .3rem;
     border-radius: .4rem;
     z-index: var(--z-tooltip);
     transition:  .4s;
@@ -504,11 +540,7 @@ a:focus {
 }
 
 /*========== SCROLL BAR ==========*/
-::-webkit-scrollbar{
-    width: .60rem;
-    background-color: var(--scroll-thumb-color);
-    border-radius: .5rem;
-}
+
 
 
 

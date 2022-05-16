@@ -77,12 +77,12 @@ function scrollActive(){
     sections.forEach(current =>{
         const sectionHeight = current.offsetHeight
         const sectionTop = current.offsetTop - 50;
-        sectionId = current.getAttribute('id')
+        sectionId = current.getAttribute('#')
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+            document.querySelector('.nav__menu a[href*=" + sectionId + "]').classList.add('active-link')
         }else{
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+            document.querySelector('.nav__menu a[href*=" + sectionId + "]').classList.remove('active-link')
         }
     })
 }
@@ -118,19 +118,7 @@ text:"Say hello to me? I'd love to hear from you"})
 /*==================== CHANGE LANGUAGES ====================*/ 
 
 
-/*==================== SCROLL REVEAL ANIMATION ====================*/
-const sr = ScrollReveal({
-  origin: 'top',
-  distance: '30px',
-  duration: 2000,
-  reset: true
+/*==================== SCROLL PAGE ANIMATION ====================*/
+const scroll = new SmoothScroll('.nav a[href*="#"]', {
+  speed:800
 });
-
-sr.reveal(`.home__data, .home__img,
-          .about__data, .about__img,
-          .services__content, .menu__content,
-          .app__data, .app__img,
-          .contact__data, .contact__button,
-          .footer__content`, {
-  interval: 200
-})
