@@ -1,5 +1,5 @@
 /*==================== Navbar MENU SHOW Y HIDDEN ====================*/
-const toggleBtn = document.getElementById('toggle-btn')
+/*const toggleBtn = document.getElementById('toggle-btn')
 const navList = document.querySelector('.nav__list')
 
 toggleBtn.addEventListener('click', () => {
@@ -9,9 +9,9 @@ toggleBtn.addEventListener('click', () => {
 const navMenu = document.getElementById('nav-menu'),
 navToggle = document.getElementById('nav-toggle'),
 navClose = document.getElementById('nav-close')
-
+*/
 /*===== MENU SHOW =====*/
-/* Validate if constant exists */
+
  
 
 /*===== MENU HIDDEN =====*/
@@ -36,19 +36,15 @@ tl.to(".text2", {duration: 1.1, text:"Front-end Developer"})
 
 /*==================== HOME PAGE TRANSITION ====================*/
 const mainTitle = document.querySelector('#main-title')
-const slider = document.querySelector('.slider')
 const header = document.querySelector('#header')
 const sub = document.querySelector('#sub-content')
-const footer = document.querySelector('#footer')
-const bg = document.querySelector('.bg-layer')
 
 const tlHome = new TimelineMax()
 
 tlHome.fromTo(mainTitle, 1, {width: '100%'}, {height: '100%', ease: Power2.easeInOut}
 ).fromTo(sub, 1.2, {opacity:0, x:-30}, {opacity:1, x:0}, '-=.1'
-).fromTo(header, 1.2, {opacity:0, x:30}, {opacity:1, x:0}, '-=1.2'
-).fromTo(footer, 1, {opacity:0, x:-50}, {opacity:1, x:0}, '-=1') 
-
+).fromTo(header, 1.2, {opacity:0, y:30}, {opacity:1, y:0}, '-=1.2'
+)
 
 
 /*==================== PORTFOLIO SWIPER  ====================*/
@@ -66,10 +62,8 @@ let swiper = new Swiper (".work__container", {
     },
 });
 
-
-
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-const sections = document.querySelectorAll('section[id]')
+const sections = document.querySelectorAll('section[id]');
 
 function scrollActive(){
     const scrollY = window.pageYOffset
@@ -77,7 +71,7 @@ function scrollActive(){
     sections.forEach(current =>{
         const sectionHeight = current.offsetHeight
         const sectionTop = current.offsetTop - 50;
-        sectionId = current.getAttribute('#')
+        sectionId = current.getAttribute('id')
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
             document.querySelector('.nav__menu a[href*=" + sectionId + "]').classList.add('active-link')
@@ -105,6 +99,11 @@ function scrollUp(){
 window.addEventListener('scroll', scrollUp)
 
 
+/*==================== SCROLL PAGE ANIMATION ====================*/
+const scroll = new SmoothScroll('.nav a[href*="#"]', {
+  speed:800
+});
+
 
 /*==================== CONTACT TYPEWRITER TEXT ANIMATIOn ====================*/ 
 let cursor = gsap.to('.cursor', {opacity: 0, ease: "power2.inOut", repeat: -1})
@@ -116,9 +115,3 @@ repeatDelay:1,
 text:"Say hello to me? I'd love to hear from you"})
 
 /*==================== CHANGE LANGUAGES ====================*/ 
-
-
-/*==================== SCROLL PAGE ANIMATION ====================*/
-const scroll = new SmoothScroll('.nav a[href*="#"]', {
-  speed:800
-});

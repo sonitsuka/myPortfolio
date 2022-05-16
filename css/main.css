@@ -159,8 +159,8 @@ img {
 
 .header {
   width: 100%;
-  position: absolute;
-  bottom: 2rem;
+  position: fixed;
+  bottom: 1.8rem;
   left: 0;
 }
 
@@ -217,7 +217,7 @@ a:focus {
     transition: filter 0.4s ease-in-out 0s, color 0.4s ease-in-out 0.1s;
 }
 
-.nav__item a:active {
+.nav__item .nav__link a:active {
     border-bottom: 5px double #716040;
 }
 
@@ -397,10 +397,14 @@ a:focus {
 /*==================== PORTFOLIO ====================*/
 .work{
     margin-top: 3rem;
+    height: 100vh;
 }
 
 .work__container{
     overflow: initial;
+    align-items: center;
+    vertical-align: middle;
+
 }
 
 .work__content{
@@ -410,10 +414,11 @@ a:focus {
 }
 
 .work__img{
-    max-width: 380px;
+    max-width: 370px;
     height: 100%;
     border-radius: .5rem;
     justify-self: center;
+    padding-left: 1rem;
 }
 
 .work__data{
@@ -494,8 +499,8 @@ a:focus {
 .footer{
     width: 100%;
     bottom: 0;
-
-     background-color: transparent;
+    background-color: transparent;
+    height: 30vh;
 
 }
 
