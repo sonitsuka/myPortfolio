@@ -414,7 +414,6 @@ a:focus {
     padding: 0 1.5rem;
     display: flex;
     align-items: center;
-    vertical-align: middle;
 }
 
 .work__img{
@@ -600,6 +599,12 @@ a:focus {
         align-content: center;
         margin: 0 auto;
     }
+
+    .work__content{
+        margin-top: 1rem;
+        padding: 0 1.5rem;
+        display: block;
+    }
 }
 
 /* For large devices */
@@ -621,6 +626,16 @@ a:focus {
 
     .social-icon {
         margin: 0 .2rem;
+    }
+
+    .work__content{
+        margin-top: 1rem;
+        padding: 0 1.5rem;
+        display: block;
+    }
+
+    .footer{
+        height: 20vh;
     }
 }
 
