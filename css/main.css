@@ -91,11 +91,13 @@ html {
 }
 
 body {
-  margin: 0 0 var(--header-height) 0;
+  margin: 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h2, h3, h4 {
@@ -420,8 +422,8 @@ a:focus {
 }
 
 .work__img{
-    max-width: 300px;
-    height: 100%;
+    max-width: 360px;
+    height: auto;
     border-radius: .5rem;
     justify-self: center;
     padding-left: 2rem;
@@ -457,9 +459,10 @@ a:focus {
     color: var(--container-color);
     background-color: var(--first-color-second);
     fill: var(--first-color-second);
-    transition: 0.3s;
+    
     padding: .15rem;
     border-radius: 5px;
+    transition: 0.3s;
 }
 
 
@@ -579,8 +582,7 @@ a:focus {
     }
 
     .work__img{
-        max-width: 300px;
-        height: 100%;
+        max-width: 265px;
         justify-self: center;
         padding-left: 0;
     }
@@ -618,6 +620,12 @@ a:focus {
         margin-top: 1rem;
         padding: 0 1.5rem;
         display: block;
+    }
+
+    .work__img{
+        max-width: 280px;
+        justify-self: center;
+        padding-left: 0;
     }
 }
 
