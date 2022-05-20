@@ -422,8 +422,7 @@ a:focus {
 }
 
 .work__img{
-    max-width: 360px;
-    height: auto;
+    width: 360px;
     border-radius: .5rem;
     justify-self: center;
     padding-left: 2rem;
@@ -582,7 +581,8 @@ a:focus {
     }
 
     .work__img{
-        max-width: 265px;
+        width: 265px;
+        height: auto;
         justify-self: center;
         padding-left: 0;
     }
@@ -623,7 +623,8 @@ a:focus {
     }
 
     .work__img{
-        max-width: 280px;
+        width: 280px;
+        height: auto;
         justify-self: center;
         padding-left: 0;
     }

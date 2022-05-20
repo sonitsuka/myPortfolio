@@ -4,7 +4,7 @@ home__social
 home__description
 Hi, I'm Oni
 Front-end Developer
-based in Germany with a film production & humanities background. Specializing in building and designing phuman-centric Web Applications. Oni is a lifelong learner and cooking lover.
+based in Germany with a film production & humanities background. Specializing in building and designing human-centric Web Applications. Oni is a lifelong learner and cooking lover.
 
 * ABOUT
 about__description
@@ -15,18 +15,8 @@ Made in Japan, studied humanity (History & Culture Science) and computer science
 My aim is always to stand in the others' shoes, to find out what they are expecting, and then to offer ideas or problem solutions beyond their expectations. As an implementation, I try to build applications and the codes I write are simple and clean in order for others to easily understand.
 
 
-about__info-name
-Years <br> experience
-Completed <br> project
-Companies <br> worked
-
-
-* SERVICES
-services__modal-service
-I develop the user interface.
-Web page development.
-I create ux element interactions.
-I position your company brand.
+*SKILLS
+HTML5, CSS3, JavaScript, React, Redux, Tailwind, Git, Github, Unit Testing & JEST, Command Line, VS Code, Responsive Websites, Chrome developer tools, Adobe Suite, the React UI Frameworks: Material UI & Ant Design &React Bootstrap, Software engineering -Basic
 
 
 * PORTFOLIO
@@ -39,13 +29,29 @@ project__description
 Contact me now and get a 30% discount on your new project.
 
 
-* TESTIMONIAL
-testimonial__description
-I get a good impression, I carry out my project with all the possible quality and attention and support 24 hours a day.
-
 
 * FOOTER
 footer__social
-https://www.facebook.com/
-https://www.instagram.com/
-https://twitter.com/
+
+
+
+Comments to review:
+/* I believe that you should pay closer attention to
+code indentation and semicolon consistency */
+
+/* JavaScript guidelines suggest using camelCase for
+variable and function names, e.g., calculatePrice, finalPrice */
+
+    /* Let's not include console.log statements in production code */
+    console.log("Calculating final price...");
+    /* Declare the discount variable with const
+    to prevent reassignment */
+
+/* Declare getDiscount with const
+to prevent reassignment, or change this to a named function */
+
+
+/* This variable is unused; please remove it */
+
+ /* What do you think about returning the value using
+    a ternary operator to make the function more concise? */
