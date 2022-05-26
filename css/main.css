@@ -221,12 +221,16 @@ img {
 
 .nav__item a:hover,
 a:focus {
-    border-bottom: 5px double #716040;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-underline-position: under;
+    text-decoration-color:#716040;
     transition: filter 0.4s ease-in-out 0s, color 0.4s ease-in-out 0.1s;
 }
 
 .nav__item .nav__link a:active {
     border-bottom: 5px double #716040;
+    text-underline-position: under;
 }
 
 /* Change background header */
