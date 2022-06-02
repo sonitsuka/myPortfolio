@@ -216,6 +216,7 @@ img {
 
 /* Active link */
 .active-link{
+    padding: .5em;
     border-bottom: 5px double #716040;
 }
 
@@ -302,9 +303,6 @@ a:focus {
 
 .social-icon{
     margin: 0 .5rem;
-}
-
-.social-icon{
     display: inline;
     float: left;
 }
