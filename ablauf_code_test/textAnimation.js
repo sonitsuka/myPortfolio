@@ -8,7 +8,7 @@ from('.hi', {duaration:10, y:"7vw", ease:"power3.out"})
 
 let tl = gsap.timeline({repeat:0})
 tl.to('.text1', {duration: 0.2, onComplete: () => boxTl.play(), text:"Hi, I'm"})
-tl.to(".text2", {duration: 1.1, text:"Front-end Developer"})
+tl.to(".text2", {duration: 1.1, text:"Frontend Developer"})
 
 /*
 let masterTl= gsap.timeline()

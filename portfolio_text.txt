@@ -3,14 +3,14 @@ home__social
 
 home__description
 Hi, I'm Oni
-Front-end Developer
-based in Germany with a film production & humanities background. Specializing in building and designing human-centric Web Applications. Oni is a lifelong learner and cooking lover.
+Frontend Developer
+based in Germany with a film production & humanities background. Specializing in designing and building human-centric Web Applications. Oni is a lifelong learner and cooking lover.
 
 * ABOUT
 about__description
-I am a passionate/cooperative junior web developer excited to start my journey as a professional web developer. I love creating and helping others.
+I am a passionate/cooperative Junior Web Developer excited to start my journey as a professional web developer. I love creating and helping others.
 
-Made in Japan, studied humanity (History & Culture Science) and computer science in Berlin, and cultivated with a deeper understanding on React.
+Made in Japan, worked as Director and Production Manager in Tokyo, studied Computer Science and Humanity (History & Culture Science) in Berlin, and cultivated with a deeper understanding on React.
 
 My aim is always to stand in the others' shoes, to find out what they are expecting, and then to offer ideas or problem solutions beyond their expectations. As an implementation, I try to build applications and the codes I write are simple and clean in order for others to easily understand.
 
@@ -23,6 +23,7 @@ HTML5, CSS3, JavaScript, React, Redux, Tailwind, Git, Github, Unit Testing & JES
 portfolio__description
 Website adaptable to all devices, with ui components and animated interactions.
 
+Styling with Material UI5, Frontend & Admin interface built by <strong>React.js</strong>,Backend built by <strong>Commerce.js, Stripe</strong>
 
 * PROJECT
 project__description
