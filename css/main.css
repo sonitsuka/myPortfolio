@@ -466,7 +466,10 @@ a:focus {
     transition: 0.3s;
 }
 
-
+#work__link {
+    font-weight: bold;
+    text-decoration: underline;
+}
 
 .swiper-button-prev::after,
 .swiper-button-next::after{
