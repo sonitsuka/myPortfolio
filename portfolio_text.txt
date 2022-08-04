@@ -1,3 +1,4 @@
+####  EN English text  ####  
 * HOME
 home__social
 
@@ -56,3 +57,7 @@ to prevent reassignment, or change this to a named function */
 
  /* What do you think about returning the value using
     a ternary operator to make the function more concise? */
+
+
+####  DE German Text deutsche #### 
+ 
